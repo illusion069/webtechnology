@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Krish</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewpoint" content="width+device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="navbar">
+	<a href="website.html"><img style="height: 35px; width:35px;" src="logo.png"></a>
+    <a href="website.html">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn">PC Games 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="lol.html">League Of Legends</a>
+      <a href="valo.html">Valorant</a>
+      <a href="apex.html">Apex Legends</a>
+      <a href="dota2.html">Dota 2</a>
+    </div>
+    </div> 
+      <div class="dropdown">
+    <button class="dropbtn">Mobile Games
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="ml.html">Mobile Legends</a>
+      <a href="coc.html">Clash Of Clans</a>
+      <a href="cr.html">Clash Royale</a>
+      <a href="genshin.html">Genshin Impact</a>
+    </div>
+    
+  </div>
+  <a href="aboutus.html">About Us</a>
+ 
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <a href="valo.html"><img src="valorant.jpg" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <a href="lol.html"><img src="league.jpg" style="width:100%"></a>
+</div>
+<div class="mySlides fade">
+  <a href="dota2.html"><img src="dota2.jpg" style="width:100%"></a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="main">
+
+<h1>PC Games</h1>
+<hr>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <a href="apex.html"><img src="apex.jpg" alt="PC Games" style="width:100%" height="350"></a>
+      <a href="apex.html"><h3>Apex Legends</h3></a>
+      <p>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="valo.html"><img src="Valo.jpg" alt="PC Games" style="width:100%" height="350"></a>
+      <a href="valo.html"><h3>Valorant</h3></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="lol.html"><img src="lol.jpg" alt="PC Games" style="width:100%" height="350"></a>
+      <a href="lol.html"><h3>League Of Legends</h3></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="dota2.html"><img src="dota2.jpg" alt="PC Games" style="width:100%" height="350"></a>
+      <a href="dota2.html"><h3>Dota 2</h3></a>
+      <p>
+</p>
+    </div>
+  </div>
+<div class="main">
+
+<h1> Mobile Games</h1>
+<hr>
+
+<h2></h2>
+<p></p>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <a href="ml.html"><img src="Mobile.jpg" alt="Mobile Games" style="width:100%" height="350"></a>
+      <a href="ml.html"><h3>Mobile Legends</h3></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="coc.html"><img src="coc.jpg" alt="Mobile Games" style="width:100%" height="350"></a>
+      <a href="coc.html"><h3>Clash of Clans</h3></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <a href="cr.html"><img src="royale.jpg" alt="Mobile Games" style="width:100%" height="350">
+        <a href="cr.html"><h3>Clash Royale</h3></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <a href="genshin.html"><img src="genshin.jpg" alt="Mobile Games" style="width:100%" height="350">
+        <a href="genshin.html"><h3>Genshin Impact</h3></a>
+      <p></p>
+    </div>
+  </div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<footer>
+  <span>&copy Copyright 2021 | All Rights reserverd by Krish.</span>
+</footer>
+</body>
+
+
+</html>
